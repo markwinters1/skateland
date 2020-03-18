@@ -11,10 +11,9 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 80px;
-  text-align: center;
-  background: #1abc9c;
-  background-image: url('../img/fb banner.jpg');
+  padding: 0px;
+  text-align: left;
+  background: linear-gradient(to bottom, #EF6730, #FCE6C5);
   color: white;
 }
 
@@ -26,8 +25,8 @@ body {
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #333;
-  background-image: linear-gradient(to top, #EF6730, black);
+  background-color: #68245E;
+
 }
 
 /* Style the navigation bar links */
@@ -47,7 +46,7 @@ body {
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #ddd;
+/*  background-color: #ddd;*/
   color: black;
 }
 
@@ -81,6 +80,15 @@ body {
   background-color: #aaa;
   width: 100%;
   padding: 0px;
+
+}
+
+.fakeimg img {
+
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+
 }
 
 /* Footer */
@@ -103,4 +111,11 @@ body {
     float: none;
     width: 100%;
   }
+}
+
+.header img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+
 }
