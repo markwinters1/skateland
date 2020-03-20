@@ -50,6 +50,10 @@ body {
   color: black;
 }
 
+.navbar .active a{
+    color: #FB6A21;
+}
+
 /* Column container */
 .row {
   display: -ms-flexbox; /* IE10 */
