@@ -1,7 +1,4 @@
-
-* {
-  box-sizing: border-box;
-}
+/**/
 
 /* Style the body */
 body {
@@ -9,90 +6,10 @@ body {
   margin: 0;
 }
 
-/* Header/logo Title */
-.header {
-  padding: 0px;
-  text-align: left;
-  background: linear-gradient(to bottom, #EF6730, #FCE6C5);
-  color: white;
-}
-
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Style the top navigation bar */
 .navbar {
-  overflow: hidden;
-  background-color: #66095D;
-
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-/*  background-color: #ddd;*/
-  color: black;
-}
-
-.navbar .active a{
-    color: #FB6A21;
-}
-
-/* Column container */
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 0px;
-
-}
-
-.fakeimg img {
-
-    float: right;
-    max-width: 100%;
-    max-height: 100%;
-
+    width: 100%;  /* i'm assuming full width */
+    height: 75px; /* change it to desired width */
+    background-color: red; /* change to desired color */
 }
 
 /* Footer */
@@ -102,24 +19,21 @@ body {
   background: #ddd;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 25px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-
-.header img {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-
+.navbar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
 }
